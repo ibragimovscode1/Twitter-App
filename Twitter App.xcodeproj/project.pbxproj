@@ -7,20 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52A8C4832878695400557230 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8C4822878695400557230 /* HomeVC.swift */; };
+		52A8C485287869C200557230 /* ExploreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8C484287869C200557230 /* ExploreVC.swift */; };
+		52A8C487287869E700557230 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8C486287869E700557230 /* NotificationVC.swift */; };
+		52A8C48928786A0500557230 /* MessagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8C48828786A0500557230 /* MessagesVC.swift */; };
+		52A8C48B28786A2D00557230 /* SpacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8C48A28786A2C00557230 /* SpacesVC.swift */; };
 		52D0B6EC28782F50004C2BA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0B6EB28782F50004C2BA7 /* AppDelegate.swift */; };
 		52D0B6EE28782F50004C2BA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0B6ED28782F50004C2BA7 /* SceneDelegate.swift */; };
-		52D0B6F028782F50004C2BA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0B6EF28782F50004C2BA7 /* ViewController.swift */; };
-		52D0B6F328782F50004C2BA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D0B6F128782F50004C2BA7 /* Main.storyboard */; };
+		52D0B6F028782F50004C2BA7 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0B6EF28782F50004C2BA7 /* MainTabBarController.swift */; };
 		52D0B6F528782F52004C2BA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D0B6F428782F52004C2BA7 /* Assets.xcassets */; };
 		52D0B6F828782F52004C2BA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D0B6F628782F52004C2BA7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52A8C4822878695400557230 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		52A8C484287869C200557230 /* ExploreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreVC.swift; sourceTree = "<group>"; };
+		52A8C486287869E700557230 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		52A8C48828786A0500557230 /* MessagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesVC.swift; sourceTree = "<group>"; };
+		52A8C48A28786A2C00557230 /* SpacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacesVC.swift; sourceTree = "<group>"; };
 		52D0B6E828782F50004C2BA7 /* Twitter App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twitter App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D0B6EB28782F50004C2BA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52D0B6ED28782F50004C2BA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		52D0B6EF28782F50004C2BA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		52D0B6F228782F50004C2BA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52D0B6EF28782F50004C2BA7 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		52D0B6F428782F52004C2BA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52D0B6F728782F52004C2BA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52D0B6F928782F52004C2BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +45,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52A8C4812878691600557230 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52D0B6EF28782F50004C2BA7 /* MainTabBarController.swift */,
+				52A8C4822878695400557230 /* HomeVC.swift */,
+				52A8C484287869C200557230 /* ExploreVC.swift */,
+				52A8C486287869E700557230 /* NotificationVC.swift */,
+				52A8C48828786A0500557230 /* MessagesVC.swift */,
+				52A8C48A28786A2C00557230 /* SpacesVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		52D0B6DF28782F50004C2BA7 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +77,9 @@
 		52D0B6EA28782F50004C2BA7 /* Twitter App */ = {
 			isa = PBXGroup;
 			children = (
+				52A8C4812878691600557230 /* Views */,
 				52D0B6EB28782F50004C2BA7 /* AppDelegate.swift */,
 				52D0B6ED28782F50004C2BA7 /* SceneDelegate.swift */,
-				52D0B6EF28782F50004C2BA7 /* ViewController.swift */,
-				52D0B6F128782F50004C2BA7 /* Main.storyboard */,
 				52D0B6F428782F52004C2BA7 /* Assets.xcassets */,
 				52D0B6F628782F52004C2BA7 /* LaunchScreen.storyboard */,
 				52D0B6F928782F52004C2BA7 /* Info.plist */,
@@ -127,7 +147,6 @@
 			files = (
 				52D0B6F828782F52004C2BA7 /* LaunchScreen.storyboard in Resources */,
 				52D0B6F528782F52004C2BA7 /* Assets.xcassets in Resources */,
-				52D0B6F328782F50004C2BA7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +157,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52D0B6F028782F50004C2BA7 /* ViewController.swift in Sources */,
+				52D0B6F028782F50004C2BA7 /* MainTabBarController.swift in Sources */,
+				52A8C48B28786A2D00557230 /* SpacesVC.swift in Sources */,
+				52A8C487287869E700557230 /* NotificationVC.swift in Sources */,
+				52A8C4832878695400557230 /* HomeVC.swift in Sources */,
+				52A8C485287869C200557230 /* ExploreVC.swift in Sources */,
 				52D0B6EC28782F50004C2BA7 /* AppDelegate.swift in Sources */,
 				52D0B6EE28782F50004C2BA7 /* SceneDelegate.swift in Sources */,
+				52A8C48928786A0500557230 /* MessagesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		52D0B6F128782F50004C2BA7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52D0B6F228782F50004C2BA7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		52D0B6F628782F52004C2BA7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +310,6 @@
 				INFOPLIST_FILE = "Twitter App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +337,6 @@
 				INFOPLIST_FILE = "Twitter App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
