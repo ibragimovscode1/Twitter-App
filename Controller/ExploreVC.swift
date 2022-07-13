@@ -8,13 +8,23 @@
 import UIKit
 
 class ExploreVC: UIViewController {
+    //MARK: - Properties
+    
+    //MARK: - LifCycle
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+      configureUI()
 
         
     }
+    //MARK: - Heplers
+    func configureUI() {
+        navigationItem.title = "Search"
+        
+    }
+
     
 
 

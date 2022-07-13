@@ -12,9 +12,13 @@ class MessagesVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
+       configureUI()
     }
-    
+    func configureUI() {
+        navigationItem.title = "Messages"
+        
+    }
+
 
 
 }

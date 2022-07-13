@@ -11,10 +11,14 @@ class NotificationVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Notificattions"
         
+        configureUI()
     }
     
+    func configureUI() {
+        navigationItem.title = "Notifications"
+        
+    }
 
  
 

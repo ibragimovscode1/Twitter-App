@@ -11,9 +11,13 @@ class SpacesVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+       configureUI()
     }
     
+    func configureUI() {
+        navigationItem.title = "Spaces"
+        
+    }
 
 
 
