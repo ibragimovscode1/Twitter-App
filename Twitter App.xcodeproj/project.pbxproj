@@ -45,7 +45,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		52A8C4812878691600557230 /* Views */ = {
+		5234B308287F1F570040BBB6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5234B309287F1F6B0040BBB6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5234B30A287F1F6E0040BBB6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				52D0B6EF28782F50004C2BA7 /* MainTabBarController.swift */,
@@ -55,13 +69,40 @@
 				52A8C48828786A0500557230 /* MessagesVC.swift */,
 				52A8C48A28786A2C00557230 /* SpacesVC.swift */,
 			);
-			path = Views;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5234B30B287F1F700040BBB6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5234B30C287F1F730040BBB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5234B30D287F1F760040BBB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		52D0B6DF28782F50004C2BA7 = {
 			isa = PBXGroup;
 			children = (
 				52D0B6EA28782F50004C2BA7 /* Twitter App */,
+				5234B30D287F1F760040BBB6 /* Model */,
+				5234B30C287F1F730040BBB6 /* View */,
+				5234B30B287F1F700040BBB6 /* ViewModel */,
+				5234B30A287F1F6E0040BBB6 /* Controller */,
+				5234B309287F1F6B0040BBB6 /* API */,
+				5234B308287F1F570040BBB6 /* Utilities */,
 				52D0B6E928782F50004C2BA7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,7 +118,6 @@
 		52D0B6EA28782F50004C2BA7 /* Twitter App */ = {
 			isa = PBXGroup;
 			children = (
-				52A8C4812878691600557230 /* Views */,
 				52D0B6EB28782F50004C2BA7 /* AppDelegate.swift */,
 				52D0B6ED28782F50004C2BA7 /* SceneDelegate.swift */,
 				52D0B6F428782F52004C2BA7 /* Assets.xcassets */,
