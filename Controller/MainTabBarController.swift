@@ -14,6 +14,7 @@ class MainTabBarController: UITabBarController {
         button.tintColor = .white
         button.backgroundColor = .twitterBlue
         button.setImage(UIImage(named: "new_tweet"), for: .normal)
+        button.addTarget(self, action: #selector(actionButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -28,12 +29,19 @@ class MainTabBarController: UITabBarController {
       
         
     }
+    //MARK: - Selectors
+    
+    @objc func actionButtonTapped() {
+        print("gggg")
+    }
+    
 // MARK: - Helpers
     func configureUI() {
         view.addSubview(actionButton)
         actionButton.anchor(bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingBottom: 64, paddingRight: 16, width: 56, height: 56)
         actionButton.layer.cornerRadius = 56/2
     }
+    
     func configure() {
         let home = HomeVC()
         let nav1 = templateNavController(image: UIImage(systemName: "house"), rootViewController: home)
