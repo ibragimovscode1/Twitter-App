@@ -101,26 +101,33 @@ class SignVC: UIViewController {
     }
     
     @objc func handleRegistration() {
-        guard let profileImage = profileImage else {
-            print("DEBUG: Please select a profile image..")
-            return
-        }
+//        guard let profileImage = profileImage else {
+//            print("DEBUG: Please select a profile image..")
+//            return
+//        }
         guard let email = emailTextField.text else { return }
         guard let password = passwordTextField.text else { return }
         guard let fullname = fullnameTextField.text else { return }
         guard let username = usernameTextField.text?.lowercased() else { return }
-
-        let credentials = AuthCredentials(email: email, password: password, fullname: fullname,
-                                          username: username, profileImage: profileImage)
-
-        AuthService.shared.registerUser(credentials: credentials) { (error, ref) in
-            guard let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) else { return }
-            guard let tab = window.rootViewController as? MainTabController else { return }
-
-            tab.authenticateUserAndConfigureUI()
-
-            self.dismiss(animated: true, completion: nil)
+        Auth.auth().createUser(withEmail: email, password: password) { result, error in
+            if let error = error {
+                print("DEBUG: Error is \(error.localizedDescription)")
+                return
+            }
+            print("DEBUG: Succesfully registered user.")
         }
+
+//        let credentials = AuthCredentials(email: email, password: password, fullname: fullname,
+//                                          username: username, profileImage: profileImage)
+//
+//        AuthService.shared.registerUser(credentials: credentials) { (error, ref) in
+//            guard let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) else { return }
+//            guard let tab = window.rootViewController as? MainTabController else { return }
+//
+//            tab.authenticateUserAndConfigureUI()
+//
+//            self.dismiss(animated: true, completion: nil)
+//        }
     }
     
     @objc func handleShowLogin() {
@@ -160,6 +167,7 @@ class SignVC: UIViewController {
     }
 }
 
+
 // MARK: - UIImagePickerControllerDelegate
 extension SignVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -180,4 +188,5 @@ extension SignVC: UIImagePickerControllerDelegate, UINavigationControllerDelegat
     }
     
 }
+
 
