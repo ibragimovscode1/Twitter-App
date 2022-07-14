@@ -10,6 +10,7 @@
 		526A7EB7288005540019783E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A7EB6288005540019783E /* Extensions.swift */; };
 		526A7EBA28800A410019783E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A7EB928800A410019783E /* LoginVC.swift */; };
 		526A7EBC28800AEC0019783E /* SignVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A7EBB28800AEC0019783E /* SignVC.swift */; };
+		526A7EC028803CD00019783E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A7EBF28803CD00019783E /* Utilities.swift */; };
 		52A8C4832878695400557230 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8C4822878695400557230 /* HomeVC.swift */; };
 		52A8C485287869C200557230 /* ExploreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8C484287869C200557230 /* ExploreVC.swift */; };
 		52A8C487287869E700557230 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8C486287869E700557230 /* NotificationVC.swift */; };
@@ -26,6 +27,7 @@
 		526A7EB6288005540019783E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		526A7EB928800A410019783E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		526A7EBB28800AEC0019783E /* SignVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignVC.swift; sourceTree = "<group>"; };
+		526A7EBF28803CD00019783E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		52A8C4822878695400557230 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		52A8C484287869C200557230 /* ExploreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreVC.swift; sourceTree = "<group>"; };
 		52A8C486287869E700557230 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				526A7EB6288005540019783E /* Extensions.swift */,
+				526A7EBF28803CD00019783E /* Utilities.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				52A8C487287869E700557230 /* NotificationVC.swift in Sources */,
 				526A7EBA28800A410019783E /* LoginVC.swift in Sources */,
 				526A7EBC28800AEC0019783E /* SignVC.swift in Sources */,
+				526A7EC028803CD00019783E /* Utilities.swift in Sources */,
 				52A8C4832878695400557230 /* HomeVC.swift in Sources */,
 				52A8C485287869C200557230 /* ExploreVC.swift in Sources */,
 				52D0B6EC28782F50004C2BA7 /* AppDelegate.swift in Sources */,
