@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		526A7EB7288005540019783E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A7EB6288005540019783E /* Extensions.swift */; };
 		52A8C4832878695400557230 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8C4822878695400557230 /* HomeVC.swift */; };
 		52A8C485287869C200557230 /* ExploreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8C484287869C200557230 /* ExploreVC.swift */; };
 		52A8C487287869E700557230 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8C486287869E700557230 /* NotificationVC.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		526A7EB6288005540019783E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		52A8C4822878695400557230 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		52A8C484287869C200557230 /* ExploreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreVC.swift; sourceTree = "<group>"; };
 		52A8C486287869E700557230 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 		5234B308287F1F570040BBB6 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				526A7EB6288005540019783E /* Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52D0B6F028782F50004C2BA7 /* MainTabBarController.swift in Sources */,
+				526A7EB7288005540019783E /* Extensions.swift in Sources */,
 				52A8C48B28786A2D00557230 /* SpacesVC.swift in Sources */,
 				52A8C487287869E700557230 /* NotificationVC.swift in Sources */,
 				52A8C4832878695400557230 /* HomeVC.swift in Sources */,

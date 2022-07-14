@@ -8,13 +8,16 @@
 import UIKit
 
 class NotificationVC: UIViewController {
-
+    //MARK: - Properties
+    
+    
+//MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureUI()
     }
-    
+    //MARK: Helpers
     func configureUI() {
         navigationItem.title = "Notifications"
         
