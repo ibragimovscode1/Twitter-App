@@ -101,10 +101,10 @@ class SignVC: UIViewController {
     }
     
     @objc func handleRegistration() {
-//        guard let profileImage = profileImage else {
-//            print("DEBUG: Please select a profile image..")
-//            return
-//        }
+        guard let profileImage = profileImage else {
+            print("DEBUG: Please select a profile image..")
+            return
+        }
         guard let email = emailTextField.text else { return }
         guard let password = passwordTextField.text else { return }
         guard let fullname = fullnameTextField.text else { return }
@@ -114,7 +114,14 @@ class SignVC: UIViewController {
                 print("DEBUG: Error is \(error.localizedDescription)")
                 return
             }
-            print("DEBUG: Succesfully registered user.")
+            guard let uid = result?.user.uid else { return }
+            
+            let values = ["email": email, "username": username, "fullname": fullname]
+            let ref = Database.database().reference().child("users").child(uid)
+            ref.updateChildValues(values) { (error, DatabaseReference) in
+                print("Debug: succesfully updated ")
+            }
+        
         }
 
 //        let credentials = AuthCredentials(email: email, password: password, fullname: fullname,

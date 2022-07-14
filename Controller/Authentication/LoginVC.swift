@@ -72,27 +72,27 @@ class LoginVC: UIViewController {
     @objc func handleShowSignUp() {
         
         let controller = SignVC()
-        navigationController?.pushViewController(controller, animated: true)
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
-    @objc func handleLogin() {
-        guard let email = emailTextField.text else { return }
-        guard let password = passwordTextField.text else { return }
-
-//        AuthService.shared.logUserIn(withEmail: email, password: password) { (result, error) in
-//            if let error = error {
-//                print("DEBUG: Error logging in \(error.localizedDescription)")
-//                return
-//            }
+//    @objc func handleLogin() {
+//        guard let email = emailTextField.text else { return }
+//        guard let password = passwordTextField.text else { return }
 //
-//            guard let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) else { return }
-//            guard let tab = window.rootViewController as? MainTabController else { return }
-//
-//            tab.authenticateUserAndConfigureUI()
-//
-//            self.dismiss(animated: true, completion: nil)
-//        }
-    }
+////        AuthService.shared.logUserIn(withEmail: email, password: password) { (result, error) in
+////            if let error = error {
+////                print("DEBUG: Error logging in \(error.localizedDescription)")
+////                return
+////            }
+////
+////            guard let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) else { return }
+////            guard let tab = window.rootViewController as? MainTabController else { return }
+////
+////            tab.authenticateUserAndConfigureUI()
+////
+////            self.dismiss(animated: true, completion: nil)
+////        }
+//    }
 
     // MARK: - Helpers
     
