@@ -118,6 +118,6 @@ class LoginVC: UIViewController {
         view.addSubview(dontHaveAccountButton)
         dontHaveAccountButton.anchor(left: view.leftAnchor,
                                      bottom: view.safeAreaLayoutGuide.bottomAnchor,
-                                     right: view.rightAnchor, paddingLeft: 40, paddingRight: 40)
+                                     right: view.rightAnchor, paddingLeft: 40, paddingRight: 40)//
     }
 }
