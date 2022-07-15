@@ -91,6 +91,7 @@ class SignVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        
     }
     
     // MARK: - Selectors
@@ -113,15 +114,19 @@ class SignVC: UIViewController {
                                           username: username ,profileImage: profileImage)
         
         AuthService.shared.registerUser(credentials: credentials) { (error, ref) in
-//            guard let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) else { return }
-//            guard let tab = window.rootViewController as? MainTabController else { return }
-//
-//            tab.authenticateUserAndConfigureUI()
-//
-//            self.dismiss(animated: true, completion: nil)
-//
-        }
-    }
+            let scenes = UIApplication.shared.connectedScenes
+                let windowScene = scenes.first as? UIWindowScene
+                guard let window = windowScene?.windows.first(where: { $0.isKeyWindow }) else {
+                  return }
+                
+                guard let tab = window.rootViewController as? MainTabBarController else { return }
+                
+                tab.authenticateUserAndConfigureUI()
+                self.dismiss(animated: true, completion: nil)
+              }
+            }
+            
+            
     
     @objc func handleShowLogin() {
         navigationController?.popViewController(animated: true)

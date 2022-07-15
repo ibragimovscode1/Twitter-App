@@ -25,14 +25,14 @@ class MainTabBarController: UITabBarController {
         super.viewDidLoad()
         view.backgroundColor = .white
         self.tabBar.isTranslucent = false
-//            logUserOut()
-        authenticateUserAndConfigure()
+    // logUserOut()
+        authenticateUserAndConfigureUI()
       
       
         
     }
     //MARK: -  API
-    func authenticateUserAndConfigure() {
+    func authenticateUserAndConfigureUI() {
         
         if Auth.auth().currentUser == nil {
             DispatchQueue.main.async {
