@@ -5,7 +5,6 @@
 //  Created by Rahmetullah on 14.07.2022.
 //
 
-
 import UIKit
 import Firebase
 
@@ -109,38 +108,25 @@ class SignVC: UIViewController {
         guard let password = passwordTextField.text else { return }
         guard let fullname = fullnameTextField.text else { return }
         guard let username = usernameTextField.text?.lowercased() else { return }
-        Auth.auth().createUser(withEmail: email, password: password) { result, error in
-            if let error = error {
-                print("DEBUG: Error is \(error.localizedDescription)")
-                return
-            }
-            guard let uid = result?.user.uid else { return }
-            
-            let values = ["email": email, "username": username, "fullname": fullname]
-            let ref = Database.database().reference().child("users").child(uid)
-            ref.updateChildValues(values) { (error, DatabaseReference) in
-                print("Debug: succesfully updated ")
-            }
         
-        }
-
-//        let credentials = AuthCredentials(email: email, password: password, fullname: fullname,
-//                                          username: username, profileImage: profileImage)
-//
-//        AuthService.shared.registerUser(credentials: credentials) { (error, ref) in
+        let credentials = AuthCredentials(email: email, password: password, fullname: fullname,
+                                          username: username ,profileImage: profileImage)
+        
+        AuthService.shared.registerUser(credentials: credentials) { (error, ref) in
 //            guard let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) else { return }
 //            guard let tab = window.rootViewController as? MainTabController else { return }
 //
 //            tab.authenticateUserAndConfigureUI()
 //
 //            self.dismiss(animated: true, completion: nil)
-//        }
+//
+        }
     }
     
     @objc func handleShowLogin() {
         navigationController?.popViewController(animated: true)
     }
-    //
+    
     // MARK: - Helpers
     
     func configureUI() {
@@ -174,8 +160,8 @@ class SignVC: UIViewController {
     }
 }
 
-
 // MARK: - UIImagePickerControllerDelegate
+
 extension SignVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -195,5 +181,3 @@ extension SignVC: UIImagePickerControllerDelegate, UINavigationControllerDelegat
     }
     
 }
-
-

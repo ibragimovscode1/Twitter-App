@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5209B1182880441A00EF0B45 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5209B1172880441A00EF0B45 /* GoogleService-Info.plist */; };
+		52475B6C2880740F0045A8F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52475B6B2880740F0045A8F9 /* Constants.swift */; };
+		52475B6E2880923E0045A8F9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52475B6D2880923E0045A8F9 /* AuthService.swift */; };
 		526A7EB7288005540019783E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A7EB6288005540019783E /* Extensions.swift */; };
 		526A7EBA28800A410019783E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A7EB928800A410019783E /* LoginVC.swift */; };
 		526A7EBC28800AEC0019783E /* SignVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A7EBB28800AEC0019783E /* SignVC.swift */; };
@@ -27,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		5209B1172880441A00EF0B45 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		52475B6B2880740F0045A8F9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		52475B6D2880923E0045A8F9 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		526A7EB6288005540019783E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		526A7EB928800A410019783E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		526A7EBB28800AEC0019783E /* SignVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignVC.swift; sourceTree = "<group>"; };
@@ -66,7 +70,6 @@
 				99916CF9A078D223F1B36B05 /* Pods-Twitter App.debug.xcconfig */,
 				C257CDD4A7D9C92F3CEFFE8C /* Pods-Twitter App.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -75,6 +78,7 @@
 			children = (
 				526A7EB6288005540019783E /* Extensions.swift */,
 				526A7EBF28803CD00019783E /* Utilities.swift */,
+				52475B6B2880740F0045A8F9 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -82,6 +86,7 @@
 		5234B309287F1F6B0040BBB6 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				52475B6D2880923E0045A8F9 /* AuthService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -297,11 +302,13 @@
 				526A7EBA28800A410019783E /* LoginVC.swift in Sources */,
 				526A7EBC28800AEC0019783E /* SignVC.swift in Sources */,
 				526A7EC028803CD00019783E /* Utilities.swift in Sources */,
+				52475B6C2880740F0045A8F9 /* Constants.swift in Sources */,
 				52A8C4832878695400557230 /* HomeVC.swift in Sources */,
 				52A8C485287869C200557230 /* ExploreVC.swift in Sources */,
 				52D0B6EC28782F50004C2BA7 /* AppDelegate.swift in Sources */,
 				52D0B6EE28782F50004C2BA7 /* SceneDelegate.swift in Sources */,
 				52A8C48928786A0500557230 /* MessagesVC.swift in Sources */,
+				52475B6E2880923E0045A8F9 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
