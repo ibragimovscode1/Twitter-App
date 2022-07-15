@@ -70,12 +70,12 @@ class MainTabBarController: UITabBarController {
     }
     
     func configureVC() {
-        let home = HomeVC()
+        let home = FeedController()
         let nav1 = templateNavController(image: UIImage(systemName: "house"), rootViewController: home)
         
         nav1.tabBarItem.selectedImage = UIImage(systemName: "house.fill")
         
-        let explore = ExploreVC()
+        let explore = ExploreController()
         let nav2 = templateNavController(image: UIImage(systemName: "magnifyingglass"), rootViewController: explore)
         
        
@@ -83,7 +83,7 @@ class MainTabBarController: UITabBarController {
         let nav3 = templateNavController(image: UIImage(systemName: "circle.hexagongrid"), rootViewController: spaces)
         
         
-        let notifications = NotificationVC()
+        let notifications = NotificationsController()
         let nav4 = templateNavController(image: UIImage(systemName: "bell"), rootViewController: notifications)
         nav4.tabBarItem.selectedImage = UIImage(systemName: "bell.fill")
         

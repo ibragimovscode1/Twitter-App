@@ -1,5 +1,5 @@
 //
-//  ExploreVC.swift
+//  ExploreController.swift
 //  Twitter App
 //
 //  Created by Rahmetullah on 8.07.2022.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ExploreVC: UIViewController {
+class ExploreController: UIViewController {
     //MARK: - Properties
     
     //MARK: - LifCycle
